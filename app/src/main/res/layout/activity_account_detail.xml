@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackgroundColor"
+    tools:context=".chart_of_account.AccountDetailActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/screen_content_spacing"
+        style="@style/MyCardView">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/screen_content_spacing"
+            android:orientation="vertical">
+
+            <!-- Account Nature-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_nature"
+                style="@style/CommonText"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAccountNature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fixed Assets"
+                style="@style/CommonTextBlue" />
+
+
+            <!-- Second Level-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_level"
+                style="@style/CommonText"
+                android:layout_marginTop="@dimen/space_between"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSecondLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11000 fixed assets"
+                style="@style/CommonTextBlue" />
+
+            <!-- Third Level-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/third_level"
+                style="@style/CommonText"
+                android:layout_marginTop="@dimen/space_between"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvThirdLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11200 Leasehold Improvement"
+                style="@style/CommonTextBlue" />
+
+
+            <!-- Account No -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_no"
+                style="@style/CommonText"
+                android:layout_marginTop="@dimen/space_between"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAccountNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11200"
+                style="@style/CommonTextBlue" />
+
+
+            <!-- Account Name -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_name"
+                style="@style/CommonText"
+                android:layout_marginTop="@dimen/space_between"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAccountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Improvement at cost"
+                style="@style/CommonTextBlue"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

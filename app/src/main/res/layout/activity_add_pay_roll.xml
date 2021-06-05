@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".payroll.AddPayRollActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/screen_content_spacing"
+            android:layout_marginEnd="@dimen/screen_content_spacing"
+            android:layout_marginBottom="@dimen/screen_content_spacing">
+
+
+            <!--Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDate"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_date"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="32"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Expense No -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayout"
+                android:layout_marginTop="@dimen/screen_content_spacing">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etExpenseNo"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_expense_no"
+                    android:inputType="text"
+                    android:maxLength="32"
+                    android:focusable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayout"
+                android:layout_marginTop="@dimen/screen_content_spacing">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescription"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_description"
+                    android:inputType="text"
+                    android:maxLength="400" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Currency -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayout"
+                android:layout_marginTop="@dimen/screen_content_spacing">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCurrency"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_currency"
+                    android:maxLength="32"
+                    android:focusable="false"
+                    android:text=""
+                    android:drawableEnd="@drawable/down_arrow"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Document-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_document"
+                style="@style/CommonText"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginTop="@dimen/screen_content_spacing"/>
+
+            <!-- Image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="@dimen/cardElevation"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:cardBackgroundColor="@color/colorCardBg">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/upload_document"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Add Item -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvaddItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_item"
+                style="@style/CommonTextBlue"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginTop="@dimen/screen_content_spacing"/>
+
+            <!-- List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvItemList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Total Amount  -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayout"
+                android:layout_marginTop="@dimen/screen_content_spacing">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTotalAmount"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_total_amount"
+                    android:inputType="number"
+                    android:focusable="false"
+                    android:maxLength="10" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonButton"
+                    android:text="@string/btn_save"
+                    android:layout_marginTop="@dimen/screen_content_spacing"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/cardElevation"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    android:layout_marginStart="@dimen/_1sdp"
+    android:layout_marginEnd="@dimen/_1sdp"
+    android:layout_marginBottom="@dimen/_1sdp"
+    android:layout_marginTop="@dimen/screen_content_spacing"
+    app:cardBackgroundColor="@color/colorCardBg">
+
+    <LinearLayout
+        android:id="@+id/llRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/screen_content_spacing">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CommonText"
+            android:text="Item"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CommonTextBlue"
+            android:text=""/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CommonText"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Amount"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmountData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CommonTextBlue"
+            android:text=""/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

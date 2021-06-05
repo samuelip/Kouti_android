@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.SettingsActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appBackgroundColor"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/screen_content_spacing"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Manage Dashboard Menu"
+                android:textColor="@color/colorEditText"
+                android:textSize="@dimen/_14ssp" />
+
+            <!-- Set Up List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dashboard_menu"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/row_menu_item"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:background="@color/colorDivider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/edit_profile"
+                android:textColor="@color/colorEditText"
+                android:textSize="@dimen/_14ssp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:background="@color/colorDivider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/change_password"
+                android:textColor="@color/colorEditText"
+                android:textSize="@dimen/_14ssp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:background="@color/colorDivider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvManageCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/toolbar_title_manage_company"
+                android:textColor="@color/colorEditText"
+                android:textSize="@dimen/_14ssp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:background="@color/colorDivider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/logout"
+                android:textColor="@color/colorEditText"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Add Currency"
+                android:textColor="@color/colorEditText"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.core.widget.NestedScrollView>

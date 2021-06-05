@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "457003971979",
+    "firebase_url": "https://koutitest.firebaseio.com",
+    "project_id": "koutitest",
+    "storage_bucket": "koutitest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457003971979:android:a6d688548f5a7e191fab8e",
+        "android_client_info": {
+          "package_name": "com.clovergreen.testing.kouti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457003971979-0jlcata0vtg9icsfqk0oc68fg1sthk0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQpUMzrlvMW3p2xcVDkd4XTXJbvOyI2cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457003971979-0jlcata0vtg9icsfqk0oc68fg1sthk0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

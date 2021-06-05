@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".view_picture.UploadImageActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llCamera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/screen_content_spacing"
+            android:elevation="@dimen/cardElevation"
+            app:cardBackgroundColor="@color/colorCardBgDark"
+            app:cardCornerRadius="@dimen/cardCornerRadius">
+
+            <FrameLayout
+                android:id="@+id/flCamera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <com.agile.kouti.utils.AutoFitTextureView
+                    android:id="@+id/textureView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btnCapture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/_18sdp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/capture_button" />
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- From Gallery -->
+        <LinearLayout
+            android:id="@+id/llTakePic1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/screen_content_spacing"
+            android:background="@drawable/corners_button"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/photo_library"
+                android:drawablePadding="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="FROM GALLERY"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/slPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/clPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/screen_content_spacing"
+                android:elevation="@dimen/cardElevation"
+                app:cardBackgroundColor="@color/colorCardBgDark"
+                app:cardCornerRadius="@dimen/cardCornerRadius">
+
+                <FrameLayout
+                    android:id="@+id/flImagePreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rectangle" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/capture"
+                        android:gravity="center"
+                        android:text="@string/confirm"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14ssp" />
+
+                </FrameLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <include layout="@layout/layout_take_picture_contents" />
+
+            <!-- From Gallery -->
+            <LinearLayout
+                android:id="@+id/llTakePic2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/screen_content_spacing"
+                android:background="@drawable/corners_button"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/photo_library"
+                    android:drawablePadding="@dimen/screen_content_spacing"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="FROM GALLERY"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- btn Upload -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpload"
+        style="@style/CommonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_content_spacing"
+        android:layout_marginTop="@dimen/screen_content_spacing"
+        android:layout_marginEnd="@dimen/screen_content_spacing"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:text="UPLOAD"
+        android:visibility="gone" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

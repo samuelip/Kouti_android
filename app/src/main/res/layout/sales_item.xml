@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llRow"
+    android:background="@color/appBackgroundColor"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CRM"
+        android:drawableEnd="@drawable/right_arrow"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/colorEditText"
+        android:layout_marginTop="@dimen/screen_content_spacing"
+        android:layout_marginBottom="@dimen/screen_content_spacing"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"/>
+
+</LinearLayout>

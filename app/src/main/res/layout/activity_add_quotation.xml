@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackgroundColor"
+    tools:context=".quotation.subItem.quotation.AddQuotationActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/screen_content_spacing"
+            android:layout_marginEnd="@dimen/screen_content_spacing"
+            android:layout_marginBottom="@dimen/screen_content_spacing">
+
+
+            <!-- Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDateQuotation"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_date"
+                    android:focusable="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Status -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etStatus"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/status"
+                    android:inputType="textMultiLine"
+                    android:maxLength="60"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Quotation -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etQuotationNo"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Quotation No.#"
+                    android:inputType="textMultiLine"
+                    android:focusable="false"
+                    android:maxLength="60"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Customer -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCustomer"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/customer"
+                    android:inputType="textMultiLine"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:maxLength="60"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Credit term (no# of days) -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCreditTermQuo"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/credit_term_no_of_days"
+                    android:inputType="textMultiLine"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:maxLength="60"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Corr. Address -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorrAddress"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Correct Address"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Deli. Address -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDeliAddress"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Delivery Address"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Upload Document -->
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/upload_document"
+                android:textSize="@dimen/_10ssp" />
+
+            <!-- Image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:elevation="@dimen/cardElevation"
+                app:cardBackgroundColor="@color/colorCardBg"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDocumentQuotation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/upload_document" />
+
+            </androidx.cardview.widget.CardView>
+
+           <!-- Customer PO No.-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCustomerPONo"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Customer PO No."
+                    android:maxLength="32"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description 1-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescription1"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Description 1"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description 2-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescription2"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Description 2"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Currency -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSelectCurrency"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/select_currency"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/down_arrow"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Total Amount -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTotalAmount"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Total Amount"
+                    android:inputType="text"
+                    android:focusable="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddMainItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_main_item"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                style="@style/CommonTextBlue"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMainItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/_20sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddQuotation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonButton"
+                android:text="@string/btn_add"
+                android:layout_marginTop="@dimen/screen_content_spacing"/>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

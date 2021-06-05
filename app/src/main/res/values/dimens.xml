@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="screen_content_spacing">@dimen/_16sdp</dimen>
+    <dimen name="form_content_spacing">@dimen/_16sdp</dimen>
+
+    <dimen name="cardCornerRadius">@dimen/_8sdp</dimen>
+    <dimen name="cardElevation">@dimen/_1sdp</dimen>
+
+    <dimen name="imageHeight">@dimen/_115sdp</dimen>
+    <dimen name="imageWidth">@dimen/_115sdp</dimen>
+
+
+    <dimen name="space_between">@dimen/_10sdp</dimen>
+
+
+</resources>

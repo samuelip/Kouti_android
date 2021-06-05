@@ -1,0 +1,96 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Button -->
+    <style name="CommonButton" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:background">@drawable/corners_button</item>
+        <item name="android:layout_marginBottom">@dimen/_32sdp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+    </style>
+
+
+    <!-- Button -->
+    <style name="CommonItemButton" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:background">@drawable/corners_20_button</item>
+
+    </style>
+
+
+    <!-- Text Black -->
+    <style name="CommonText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textColor">@color/colorEditText</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <!-- Text Blue -->
+    <style name="CommonTextBlue" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <!-- Toolbar Text -->
+    <style name="ToolbarText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:textColor">@color/colorEditText</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+
+
+    <!-- Edit text -->
+    <style name="styleTextInputEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/colorEditText</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <!-- Hint text -->
+    <style name="MyHintStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColor">@color/colorEditText</item>
+        <item name="colorControlNormal">@android:color/holo_green_dark</item>
+        <item name="colorControlActivated">@color/colorBlue</item>
+        <item name="colorControlHighlight">@android:color/holo_orange_dark</item>
+    </style>
+
+    <style name="MyTextInputLayout">
+        <item name="hintTextColor">@color/colorEditText</item>
+        <item name="android:textColorHint">@color/colorEditText</item>
+        <item name="android:layout_marginTop">@dimen/form_content_spacing</item>
+    </style>
+
+    <style name="MyCardView" parent="Base.CardView">
+        <item name="cardCornerRadius">@dimen/cardCornerRadius</item>
+        <item name="cardElevation">@dimen/cardElevation</item>
+        <item name="cardBackgroundColor">@color/colorCardBg</item>
+    </style>
+
+
+
+
+
+    <style name="CustomDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+
+
+
+</resources>

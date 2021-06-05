@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".crm.AddCrmActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/screen_content_spacing"
+            android:orientation="vertical">
+
+            <!--Code -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCode"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_code_auto_generated"
+                    android:inputType="number"
+                    android:maxLength="25" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_name"
+                    android:maxLength="25"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Telephone -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTelephone"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_telephone_no"
+                    android:inputType="phone"
+                    android:maxLength="16" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Mobile -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMobile"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_mobile"
+                    android:inputType="phone"
+                    android:maxLength="16" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Fax -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFax"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_fax"
+                    android:maxLength="20" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--KeyWord -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etKeyWord"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_keyword"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Coins -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCoins"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_coins"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Select Group  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGroup"
+                    style="@style/styleTextInputEditText"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/hint_select_group_or_add_group" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Business Register No#.  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBusinessRegisterNo"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_business_register_no"
+                    android:inputType="number"
+                    android:maxLength="20" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Upload Image -->
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Upload Image"
+                android:textSize="@dimen/_10ssp" />
+
+            <!-- Image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:elevation="@dimen/cardElevation"
+                app:cardBackgroundColor="@color/colorCardBg"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/upload_document" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contact -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContact"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_contact"
+                    android:inputType="text"
+                    android:maxLength="160" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--ID -->
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/txt_id"
+                android:textSize="@dimen/_10ssp" />
+
+            <!-- Image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:elevation="@dimen/cardElevation"
+                app:cardBackgroundColor="@color/colorCardBg"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/upload_document" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Gender -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGender"
+                    style="@style/styleTextInputEditText"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/hint_gender"
+                    android:text="Male" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Date Birth -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDob"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_birthday_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Remarks -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRemarks"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_remarks"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Join Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etJoinDate"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_join_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Member ship expiry date -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etExpiryDate"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_membership_expiry_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Address -->
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonTextBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_content_spacing"
+                android:text="@string/hint_address" />
+
+
+            <!-- Default Address -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDefaultAddress"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_default_address"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDefaultAddress2"
+                style="@style/styleTextInputEditText"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:maxLength="200" />
+
+
+            <!-- Delivery Address -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDeliveryAddress"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_delivery_address"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDeliveryAddress2"
+                style="@style/styleTextInputEditText"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:maxLength="200" />
+
+            <!-- Add other Address -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOtherAddress"
+                style="@style/CommonTextBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_content_spacing"
+                android:text="@string/hint_add_other_address_if_any" />
+
+            <!-- Other Address -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etOtherAddress"
+                style="@style/styleTextInputEditText"
+                android:hint="Other Address"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:textColorHint="@color/colorEditText"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/screen_content_spacing"/>
+
+
+            <!-- Credit Limit  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCreditLimit"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_credit_limit"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Credit Term No# of the days or select end date  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTermNoOrDate"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_credit_term_no_of_the_days_or_select_end_date"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:maxLength="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Contact  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContact2"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_contact"
+                    android:inputType="text"
+                    android:maxLength="50" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Select Default Currency  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDefaultCurrency"
+                    style="@style/styleTextInputEditText"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/hint_select_default_currency" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Return Account (Select account)  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReturnAccount"
+                    style="@style/styleTextInputEditText"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/hint_return_account_select_account" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Select Referred Customer  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReferredCustomer"
+                    style="@style/styleTextInputEditText"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/hint_select_referred_customer" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Height  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHeight"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_height"
+                    android:maxLength="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Weight  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etWeight"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_weight"
+                    android:maxLength="20" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Occupation  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOccupation"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_occupation"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Marital Status  -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMaritalStatus"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_marital_status"
+                    android:maxLength="50"
+                    android:text="Married" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Reference Person Details -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvReferencePersonDetails"
+                style="@style/CommonTextBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:text="@string/hint_reference_person_details" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/_20sdp" />
+
+
+            <!-- Add Person -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddPerson"
+                style="@style/CommonTextBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:text="@string/txt_add_person" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSave"
+                style="@style/CommonButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_content_spacing"
+                android:text="@string/btn_save" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

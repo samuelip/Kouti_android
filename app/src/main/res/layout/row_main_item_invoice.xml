@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/_1sdp"
+    android:layout_marginTop="@dimen/screen_content_spacing"
+    android:layout_marginEnd="@dimen/_1sdp"
+    android:elevation="@dimen/cardElevation"
+    app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <LinearLayout
+        android:id="@+id/llHeaderMainInv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/screen_content_spacing"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CommonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemMainInv"
+            style="@style/CommonTextBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N/A" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CommonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRemarksMainInv"
+            style="@style/CommonTextBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N/A" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "339651361221",
+    "firebase_url": "https://kouti-3595d.firebaseio.com",
+    "project_id": "kouti-3595d",
+    "storage_bucket": "kouti-3595d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339651361221:android:cfa1d1ab0a2d3d94efb3ac",
+        "android_client_info": {
+          "package_name": "com.agile.kouti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339651361221-od5oulh9hk8tokklbjbqp1kcbic9v1ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1qeB6dr0v1mQusR29nIokJuYbYnZ9_70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339651361221-od5oulh9hk8tokklbjbqp1kcbic9v1ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

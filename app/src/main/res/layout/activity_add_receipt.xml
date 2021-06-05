@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackgroundColor"
+    tools:context=".receipt.AddReceiptActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/screen_content_spacing"
+            android:layout_marginEnd="@dimen/screen_content_spacing"
+            android:orientation="vertical">
+
+            <!-- Receipt Detail -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextBlue"
+                android:text="Receipt Details"
+                android:layout_marginTop="@dimen/screen_content_spacing"/>
+
+            <!-- Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDateRec"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Receipt No.# -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReceiptNo"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/receipt_no" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Customer -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCustomerRec"
+                    style="@style/styleTextInputEditText"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/customer"
+                    android:inputType="textMultiLine"
+                    android:maxLength="60" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Invoice No.# -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etInvoiceNoRec"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:hint="@string/invoice_no" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Invoice -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etInvoiceRec"
+                    style="@style/styleTextInputEditText"
+
+                    android:hint="@string/invoice" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Correct Address -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorrectAddressRec"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/correct_address"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescriptionRec"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/description"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Upload Document -->
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/upload_document"
+                android:textSize="@dimen/_10ssp" />
+
+            <!-- Image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:elevation="@dimen/cardElevation"
+                app:cardBackgroundColor="@color/colorCardBg"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDocumentRec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/upload_document" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Currency -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCurrencyRec"
+                    style="@style/styleTextInputEditText"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/select_currency"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Local -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLocal"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/local"
+                    android:inputType="number"
+                    android:maxLength="10"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Discount -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDiscount"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/discount"
+                    android:inputType="number"
+                    android:maxLength="10"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Unsettled -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUnsettled"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/unsettled"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Return -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReturn"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/hint_return"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Receive -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReceive"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/receive"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Total -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTotal"
+                    style="@style/styleTextInputEditText"
+                    android:hint="@string/total"
+                    android:focusable="false"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddReceiptAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextBlue"
+                android:text="@string/receiving_amounts_details"
+                android:layout_marginTop="@dimen/screen_content_spacing"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReceiptAccountList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:paddingBottom="@dimen/_20sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonButton"
+                android:text="@string/btn_add"
+                android:layout_marginTop="@dimen/screen_content_spacing"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

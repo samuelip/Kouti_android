@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/screen_content_spacing"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCurrencyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/text_currency"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toStartOf="@id/tvRateTitle"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCurrency"
+        android:layout_width="0dp"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="HKD"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/tvCurrencyTitle"
+        app:layout_constraintStart_toStartOf="@id/tvCurrencyTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrencyTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/text_rate"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toStartOf="@id/tvAmountTitle"
+        app:layout_constraintStart_toEndOf="@id/tvCurrencyTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRate"
+        android:layout_width="0dp"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="1.0"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/tvRateTitle"
+        app:layout_constraintStart_toStartOf="@id/tvRateTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvRateTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/text_amount"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvRateTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        android:layout_width="0dp"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="1000"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/tvAmountTitle"
+        app:layout_constraintStart_toStartOf="@id/tvAmountTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvAmountTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/date"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvExpensesTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrency" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:inputType="textMultiLine"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="17/07/2020"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toStartOf="@id/tvExpensesTitle"
+        android:layout_marginEnd="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="@id/tvDateTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvDateTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExpensesTitle"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/text_expenses"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@id/tvDateTitle"
+        app:layout_constraintEnd_toStartOf="@id/tvDescriptionTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrency" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExpenses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="1234 office supplies"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/tvExpensesTitle"
+        app:layout_constraintStart_toStartOf="@id/tvExpensesTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvExpensesTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescriptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/description"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@id/tvExpensesTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrency" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Label"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/tvDescriptionTitle"
+        app:layout_constraintStart_toStartOf="@id/tvDescriptionTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionTitle" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/rowTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvDate,tvExpenses,tvDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvNoByDateTitle"
+       app:layout_constraintTop_toBottomOf="@id/tvDate"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoByDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/text_no_by_date"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/rowTwo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoByDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="SS0200717"
+        app:layout_constraintEnd_toStartOf="@id/tvPaidByTitle"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/tvNoByDateTitle"
+        app:layout_constraintStart_toStartOf="@id/tvNoByDateTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvNoByDateTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaidByTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/text_paid_by"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@id/tvExpensesTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rowTwo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaidBy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="4567 Staff Account"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/tvPaidByTitle"
+        app:layout_constraintStart_toStartOf="@id/tvPaidByTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvPaidByTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

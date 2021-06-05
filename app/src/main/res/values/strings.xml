@@ -1,0 +1,328 @@
+<resources>
+
+    <string name="app_name">Kouti</string>
+
+    <string name="internet_error">Please check your internet connection and try again.</string>
+
+    <string name="txt_add">Add</string>
+    <string name="txt_edit">Edit</string>
+    <!-- <string name="default_color">#EAE3E3</string>-->
+    <string name="try_again">Please try again</string>
+
+    <!-- Toolbar Title -->
+    <string name="toolbar_title_payroll_expense">PayRoll Expenses</string>
+    <string name="toolbar_payroll_expenses">PayRoll Expenses</string>
+    <string name="toolbar_title_crm">CRM</string>
+    <string name="toolbar_title_person_detail">Add Person Detail</string>
+    <string name="toolbar_title_quotation">Quotation</string>
+    <string name="toolbar_title_invoice">Invoice</string>
+    <string name="toolbar_title_receipt">Receipt</string>
+    <string name="toolbar_title_receipt_account">Receipt Account</string>
+    <string name="toolbar_title_manage_company">Manage Company</string>
+    <string name="toolbar_title_manage_add_sub_user">Add Sub User</string>
+    <string name="toolbar_title_manage_edit_sub_user">Edit Sub User</string>
+    <string name="toolbar_title_change_password">Change Password</string>
+    <string name="toolbar_title_settings">Settings</string>
+    <string name="toolbar_title_chart_of_account">Chart Of Account</string>
+    <string name="toolbar_title_view_picture">View Picture</string>
+    <string name="toolbar_title_take_picture">Take Picture</string>
+
+    <!-- Login Screen -->
+    <string name="hint_email">Email</string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="tv_forgot_password">Forgot Password?</string>
+    <string name="btn_login">Login</string>
+    <string name="error_enter_email">Please enter email.</string>
+    <string name="error_enter_valid_email">Please enter valid email.</string>
+    <string name="error_enter_password">Please enter password.</string>
+    <string name="error_password_sort">Password length is sort</string>
+    <string name="error_valid_password">Please valid password.</string>
+
+    <string name="forgot_password">Forgot Password</string>
+    <string name="btn_submit">Submit</string>
+    <string name="we_just_you">We just your registered email address to send you password reset.</string>
+    <string name="reset_password_link_message">Reset Password link send to your mail id</string>
+
+
+    <!-- Home -->
+    <string name="setup">SetUp</string>
+    <string name="see_all">See All</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="transaction_zone">Transaction Zone</string>
+    <string name="receivable">Receivable</string>
+    <string name="payable_for_staff">Payable For Staff</string>
+    <string name="payable_for_the_supplier">Payable For The Supplier</string>
+    <string name="sales_of_the_month">Sales Of The Month</string>
+    <string name="sales_of_nthe_day">Sales Of \nThe Day</string>
+    <string name="sales_performance">Sales Performance</string>
+    <string name="claimed">Claimed</string>
+
+    <!-- Chart of account -->
+    <string name="hint_account_nature">Account Nature</string>
+    <string name="hint_second_level">Second Level</string>
+    <string name="hint_third_level">Third Level</string>
+    <string name="hint_account_no">Account No.</string>
+    <string name="hint_account_name">Account Name</string>
+    <string name="hint_traditional_chinese">Traditional Chinese</string>
+    <string name="hint_simplified_chinese">Simplified Chinese</string>
+    <string name="btn_save">SAVE</string>
+    <string name="chart_of_account">Chart of Account</string>
+
+    <!-- Search -->
+    <string name="filter">Filter</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="select_all">Select All</string>
+
+    <!-- chart of account detail -->
+    <string name="account_nature">Account Nature</string>
+    <string name="second_level">Second Level</string>
+    <string name="third_level">Third Level</string>
+    <string name="fourth_level">Fourth level</string>
+    <string name="account_no">Account No</string>
+    <string name="account_name">Account Name</string>
+    <string name="traditional_chinese">Traditional Chinese</string>
+    <string name="simplified_chinese">Simplified Chinese</string>
+    <string name="hint_search">Search</string>
+    <string name="add_account">Account added successfully</string>
+    <string name="select_account_nature">Please select account nature.</string>
+    <string name="select_second_level">Please select second level.</string>
+    <string name="select_third_level">Please select third level.</string>
+    <string name="select_fourth_level">Please select fourth level.</string>
+    <string name="enter_account_no">Please enter account no.</string>
+    <string name="enter_account_name">Please enter account name.</string>
+
+    <!-- Add Payroll -->
+    <string name="add_item"><u>+ Add item</u></string>
+    <string name="accouny_update">Account updated successfully.</string>
+    <string name="select_account">Please select at least one chart of account</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_expense_no">Expense No.#</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_currency">Currency</string>
+    <string name="txt_document">Document</string>
+    <string name="hint_total_amount">Total Amount</string>
+
+    <string name="error_select_date">Please select date.</string>
+    <string name="error_expense_no">Please enter expense no.</string>
+    <string name="error_enter_description">Please enter description.</string>
+    <string name="error_enter_currency">Please select currency.</string>
+    <string name="error_enter_amount">Please enter total amount</string>
+    <string name="error_select_document">Please select document</string>
+    <string name="error_image_upload_failed">Image upload failed please try again</string>
+    <string name="error_failed_try_again">Failed please try again</string>
+    <string name="error_upload_image">Please Upload an Image</string>
+
+
+    <!-- Add Payroll Item -->
+    <string name="select_or_add_staff_vendor">Select or Add Staff/Vendor</string>
+    <string name="select_or_add_item">Select or Add Item</string>
+    <string name="hint_add_remark">Add Remark</string>
+    <string name="hint_select_or_add_project_shop">Select or Add Project/Shop</string>
+    <string name="hint_add_amount">Add Amount</string>
+    <string name="btn_add_item">ADD ITEM</string>
+    <string name="enter_vendor_name">Please enter vendor name.</string>
+    <string name="enter_group">Please enter group.</string>
+    <string name="btn_add">ADD</string>
+
+
+    <string name="error_select_staff">Please select staff/vendor.</string>
+    <string name="error_select_item">Please select item.</string>
+    <string name="error_enter_remark">Please enter remark.</string>
+    <string name="select_project_shop">Please select project/shop.</string>
+    <string name="error_please_enter_amount">Please enter amount.</string>
+    <string name="toolbar_payroll_add_item">Payroll Add Item</string>
+
+    <!-- Add CRM -->
+    <string name="hint_code_auto_generated">Code (Auto-Generated)</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_telephone_no">Telephone No.#</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_fax">Fax</string>
+    <string name="hint_keyword">Keyword</string>
+    <string name="hint_coins">Coins</string>
+    <string name="hint_select_group_or_add_group">Select Group Or Add Group</string>
+    <string name="hint_business_register_no">Business Registration No.#</string>
+    <string name="hint_contact">Contact</string>
+    <string name="txt_id">ID</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_birthday_date">Birthday date</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_remarks">Remarks</string>
+    <string name="hint_remark">Remark</string>
+    <string name="hint_join_date">Join date</string>
+    <string name="hint_membership_expiry_date">Membership expiry date</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_default_address">Default Address</string>
+    <string name="hint_delivery_address">Delivery Address</string>
+    <string name="hint_add_other_address_if_any"><u>+Add Other Address if Any</u></string>
+    <string name="hint_credit_limit">Credit Limit</string>
+    <string name="hint_credit_term_no_of_the_days_or_select_end_date">Credit Term No# Of The Days or Select End Date</string>
+    <string name="hint_select_default_currency">Select Default Currency</string>
+    <string name="hint_return_account_select_account">Return Account (Select account)</string>
+    <string name="hint_select_referred_customer">Select Referred Customer</string>
+    <string name="hint_height">Height</string>
+    <string name="hint_weight">Weight</string>
+    <string name="hint_occupation">Occupation</string>
+    <string name="hint_marital_status">Marital Status</string>
+    <string name="hint_reference_person_details">Reference Person Details</string>
+    <string name="txt_add_person"><u>+ Add Person</u></string>
+    <string name="reference_image_upload">Reference image upload</string>
+    <string name="btn_add_person">ADD PERSON</string>
+
+    <!-- Add Person -->
+    <string name="error_enter_name">Please enter name.</string>
+    <string name="error_enter_birthday">Please enter birthday.</string>
+    <string name="error_select_image">Please select image</string>
+
+
+    <!-- Quotation Sub Item -->
+    <string name="stock_name">Stock Name</string>
+    <string name="location">Location</string>
+    <string name="project_shop">Project/Shop</string>
+    <string name="specification">Specification</string>
+    <string name="description">Description</string>
+    <string name="qty">Qty</string>
+    <string name="unit">Unit</string>
+    <string name="u_p">U.P.</string>
+    <string name="discount">Discount</string>
+    <string name="np">NP</string>
+    <string name="line_total">Line Total</string>
+    <string name="stockout_date">Stockout Date</string>
+    <string name="enter_stock_name">Please enter stock name.</string>
+    <string name="enter_location">Please enter location.</string>
+    <string name="enter_shop">Please enter project/shop.</string>
+    <string name="enter_specification">Please enter specification.</string>
+    <string name="enter_description">Please enter description.</string>
+    <string name="enter_qty">Please enter qty.</string>
+    <string name="enter_unit">Please enter unit.</string>
+    <string name="enter_up">Please enter u.p.</string>
+    <string name="enter_discount">Please enter discount.</string>
+    <string name="enter_np">Please enter NP.</string>
+    <string name="enter_line_total">Please enter line total.</string>
+    <string name="enter_stockout_date">Please enter stock-out date.</string>
+    <string name="add_sub_item"><u>+ Add Sub Item</u></string>
+    <string name="add_main_item"><u>+ Add Main Item</u></string>
+
+    <!-- Main Item -->
+    <string name="enter_item_name">Please enter item.</string>
+    <string name="enter_amount">Please enter amount.</string>
+    <string name="enter_net_amount">Please enter net amount.</string>
+    <string name="select_date">Please select date.</string>
+    <string name="enter_status">Please enter status.</string>
+    <string name="select_customer">Please select customer.</string>
+    <string name="enter_crr_add">Please enter correct address.</string>
+    <string name="enter_deli_add">Please enter delivery address.</string>
+    <string name="enter_po_no">Please enter customer PO no.</string>
+    <string name="enter_description_one">Please enter description 1.</string>
+    <string name="enter_description_two">Please enter description 2.</string>
+    <string name="enter_currency">Please select currency</string>
+    <string name="enter_total_amount">Please enter total amount.</string>
+    <string name="status">Status</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="customer">Customer</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="amount">Amount</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="unit_name">Unit Name</string>
+    <string name="unit_display">Unit Display</string>
+    <string name="rate">Rate</string>
+    <string name="conversion_unit">Conversion Unit</string>
+    <string name="enter_phone_no">Please enter telephone no.</string>
+    <string name="enter_valid_phone_no">Please enter valid phone no.</string>
+    <string name="enter_mobile_no">Please enter mobile no.</string>
+    <string name="enter_valid_mobile">Please enter valid mobile no.</string>
+    <string name="enter_fax">Please enter fax no.</string>
+    <string name="enter_keyword">Please enter keyword.</string>
+    <string name="enter_coins">Please enter coins.</string>
+    <string name="enter_business_reg_no">Please enter business registration no.</string>
+    <string name="select_gender">Please select gender.</string>
+    <string name="select_dob">Please select date of birth.</string>
+    <string name="enter_remarks">Please enter remarks.</string>
+    <string name="enter_join_date">Please select join date.</string>
+    <string name="enter_expiry_date">Please select membership expiry date.</string>
+    <string name="enter_default_address">Please enter default address.</string>
+    <string name="enter_deli_address">Please enter delivery address.</string>
+    <string name="enter_credit_limit">Please enter credit limit.</string>
+    <string name="enter_credit_days">Please enter credit term no. of days.</string>
+    <string name="enter_contact">Please enter contact.</string>
+    <string name="select_default_currency">Please select default currency.</string>
+    <string name="enter_return_account">Please select return account.</string>
+    <string name="enter_referred_customer">Please select referred customer.</string>
+    <string name="enter_height">Please enter height.</string>
+    <string name="enter_weight">Please enter weight.</string>
+    <string name="enter_occupation">Please enter occupation.</string>
+    <string name="enter_marital_status">Please select marital status.</string>
+    <string name="upload_document_image">Please upload document image.</string>
+    <string name="upload_id">Please upload ID image.</string>
+    <string name="enter_customer">Please select customer.</string>
+    <string name="address">Address</string>
+    <string name="enter_address">Please enter address</string>
+    <string name="enter_account_nature">Please enter account nature.</string>
+    <string name="enter_second_level">Please enter second level.</string>
+    <string name="enter_third_level">Please enter third level.</string>
+    <string name="enter_fourth_level">Please enter fourth level.</string>
+    <string name="enter_unit_name">Enter unit name.</string>
+    <string name="enter_unit_display">Enter unit display</string>
+    <string name="enter_rate">Please enter rate.</string>
+    <string name="enter_conversion_unit">Please enter conversion unit</string>
+    <string name="enter_customer_po_no">Please enter customer po no.</string>
+    <string name="enter_enter_quotation_no">Please enter quotation no.</string>
+    <string name="enter_item_stock">Please enter item stock.</string>
+    <string name="enter_total_item">Please enter total item.</string>
+    <string name="enter_packing_list">Please enter packing list no.</string>
+    <string name="enter_debit_note">Please enter debit note.</string>
+    <string name="quotation_no">Quotation No.#</string>
+    <string name="description_1">Description 1</string>
+    <string name="description_2">Description 2</string>
+    <string name="item">Item</string>
+    <string name="credit_term_no_of_days">Credit term (no# of days)</string>
+    <string name="date">Date</string>
+    <string name="invoice_no">Invoice No.#</string>
+    <string name="correct_address">Correct Address</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="quotation_number">Quotation No</string>
+    <string name="debite_no">Debit No.</string>
+    <string name="delivery_note_no">Delivery Note No.</string>
+    <string name="packing_list_no">Packing List No.</string>
+    <string name="total">Total</string>
+    <string name="enter_credit_term">Please enter credit term (no# of days)</string>
+    <string name="customer_po_no">Customer PO No#</string>
+    <string name="stock">Stock</string>
+    <string name="local">Local</string>
+    <string name="unsettled">Unsettled</string>
+    <string name="hint_return">Return</string>
+    <string name="receive">Receive</string>
+    <string name="accounts">Accounts</string>
+    <string name="credit_note_no">Credit Note No</string>
+    <string name="invoice">Invoice</string>
+    <string name="receipt_no">Receipt No.#</string>
+    <string name="receiving_amounts_details"><u>+ Receiving Amounts Details</u></string>
+    <string name="btn_create">CREATE</string>
+    <string name="enter_name">Please enter name.</string>
+    <string name="enter_phone_number">Please enter phone number.</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="delete_item">Delete ?</string>
+    <string name="want_to_delete">Are you sure you want to delete ?</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="select_payroll">Please select at least one payroll</string>
+    <string name="select_one_invoice">Please select at least one invoice item</string>
+    <string name="select_one_crm">Please select at least one crm item</string>
+    <string name="select_one_quotation">Please select at least one quotation.</string>
+    <string name="select_one_receipt">Please select at least one receipt.</string>
+    <string name="no_currency_found">No currency found</string>
+    <string name="confirm">Confirm</string>
+    <string name="text_currency">Currency</string>
+    <string name="text_rate">Rate</string>
+    <string name="text_amount">Amount</string>
+    <string name="text_expenses">Expenses</string>
+    <string name="text_no_by_date">No. By Date</string>
+    <string name="text_paid_by">Paid By</string>
+
+
+</resources>

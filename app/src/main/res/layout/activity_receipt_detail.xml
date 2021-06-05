@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".receipt.ReceiptDetailActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/screen_content_spacing"
+                android:elevation="@dimen/cardElevation"
+                app:cardCornerRadius="@dimen/cardCornerRadius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/screen_content_spacing"
+                    android:orientation="vertical">
+
+                    <!-- Date -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_date" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDateRec"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Receipt No-->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/receipt_no" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvReceiptNo"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Customer -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/customer" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCustomerRec"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Invoice Number  -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/invoice_no" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvInvoiceNoRec"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Invoice   -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/invoice" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvInvoiceRec"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Correct Address -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/correct_address" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCorrectAdd"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+
+                    <!-- Description -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/description" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDescription"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+
+                    <!-- Currency -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/hint_currency" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCurrency"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Local -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/local" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvLocal"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Discount -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/discount" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDiscount"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+
+                    <!-- Unsettled -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/unsettled" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvUnsettled"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- return -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/hint_return" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvReturn"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Receive -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/receive" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvReceive"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Total -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/total" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTotal"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A" />
+
+                    <!-- Upload Document -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/upload_document" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvUploadDocument"
+                        style="@style/CommonTextBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/document"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Document" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextBlue"
+                android:text="Receiving Amounts Details"
+                android:layout_marginTop="@dimen/screen_content_spacing"
+                android:layout_marginEnd="@dimen/screen_content_spacing"
+                android:layout_marginStart="@dimen/screen_content_spacing"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReceiptList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginStart="@dimen/screen_content_spacing"
+                android:layout_marginEnd="@dimen/screen_content_spacing"
+                android:paddingBottom="@dimen/_20sdp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

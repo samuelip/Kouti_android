@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".payroll.AddItemActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/screen_content_spacing"
+            android:layout_marginEnd="@dimen/screen_content_spacing"
+            android:orientation="vertical">
+
+            <!-- Account Nature -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAccountNature"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_account_nature"
+                    android:inputType="text"
+                    android:drawableEnd="@drawable/down_arrow"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Second Level -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSecondLevel"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_second_level"
+                    android:inputType="text"
+                    android:drawableEnd="@drawable/down_arrow"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Third Level -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etThirdLevel"
+                    style="@style/styleTextInputEditText"
+                    android:focusable="false"
+                    android:hint="@string/hint_third_level"
+                    android:inputType="text"
+                    android:drawableEnd="@drawable/down_arrow"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Account Number -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAccountNumber"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Account Number"
+                     />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Account fourth level -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAccountFourthLevel"
+                    style="@style/styleTextInputEditText"
+                    android:hint="Account fourth level"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Add -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAdd"
+                style="@style/CommonButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_content_spacing"
+                android:text="@string/btn_add" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

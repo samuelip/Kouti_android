@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agile.kouti">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".KoutiApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view_picture.UploadImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view_picture.ViewPictureActivity" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".manage_company.AddSubUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".manage_company.ManageCompanyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".receipt.ReceiptAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".receipt.ReceiptDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".receipt.AddReceiptActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".receipt.ReceiptListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.invoice_list.InvoiceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.main_item.MainItemInvoiceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.sub_item.SubItemInvoiceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.sub_item.SubItemInvoiceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.main_item.MainItemInvoiceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.invoice_list.AddInvoiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".invoice.invoice_list.InvoiceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.main_item.MainItemInvoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".invoice.sub_item.InvoiceSubItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.sub_item.SubItemDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.main_item.MainItemDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.quotation_detail.QuotationDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.sub_item.SubItemQuotationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.main_item.MainItemListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.quotation.AddQuotationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".quotation.subItem.main_item.MainItemQuotationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.sub_item.AddUnitsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".quotation.subItem.quotation.QuotationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quotation.subItem.sub_item.SubItemQuotationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".crm.CrmDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".crm.AddPersonDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".crm.CrmListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".crm.AddCrmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".payroll.PayrollExpenseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payroll.PayrollExpenseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payroll.AddItemActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".payroll.AddStaffActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".payroll.PayrollAddItemActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!--
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path"/>
+        </provider>
+        -->
+        <activity
+            android:name=".search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sale.SaleActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".login.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chart_of_account.AccountListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chart_of_account.AccountDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chart_of_account.AddChartOfAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".payroll.AddPayRollActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>
